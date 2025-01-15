@@ -3,6 +3,7 @@ package LV2;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class Main {
     public static void main(String[] args) {
@@ -30,7 +31,7 @@ public class Main {
                 } else {
                     System.out.println("올바른 번호를 입력하세요.");
                 }
-            } catch (Exception e) {
+            } catch (InputMismatchException e) {
                 System.out.println("유효한 숫자를 입력하세요.");
                 scanner.next(); // 잘못된 입력을 처리
             }
