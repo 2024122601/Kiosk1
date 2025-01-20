@@ -65,7 +65,7 @@ public class Kiosk {
     }
 
     private void showMenuItems(Menu menu) {
-        System.out.println("\n[" + menu.getCategoryName().toUpperCase() + " MENU ]");
+        System.out.println("[" + menu.getCategoryName().toUpperCase() + " MENU ]");
         menu.showMenuItems();
         System.out.println("0. 뒤로가기");
 
@@ -78,7 +78,7 @@ public class Kiosk {
 
         if (choice > 0 && choice <= menu.getMenuItems().size()) {
             MenuItem selectedItem = menu.getMenuItems().get(choice - 1);
-            System.out.println("\n선택한 메뉴: " + selectedItem);
+            System.out.println("선택한 메뉴: " + selectedItem);
         } else {
             System.out.println("잘못된 입력입니다. 다시 시도해주세요.");
         }
